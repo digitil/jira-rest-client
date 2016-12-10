@@ -1,0 +1,1907 @@
+[
+    {
+        "name": "",
+        "methods": [
+            {
+                "name": "getPermissions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2//mypermissions?projectKey=(:projectKey)&projectId=(:projectId)&issueKey=(:issueKey)&issueId=(:issueId)"
+            },
+            {
+                "name": "getAllPermissions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2//permissions"
+            }
+        ]
+    },
+    {
+        "name": "application-properties",
+        "methods": [
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/application-properties?key=(:key)&permissionLevel=(:permissionLevel)&keyFilter=(:keyFilter)"
+            },
+            {
+                "name": "setPropertyViaRestfulTable",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/application-properties/:id"
+            },
+            {
+                "name": "getAdvancedSettings",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/application-properties/advanced-settings"
+            }
+        ]
+    },
+    {
+        "name": "applicationrole",
+        "methods": [
+            {
+                "name": "getAll",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/applicationrole"
+            },
+            {
+                "name": "get",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/applicationrole/:key"
+            }
+        ]
+    },
+    {
+        "name": "attachment",
+        "methods": [
+            {
+                "name": "getAttachment",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/attachment/:id"
+            },
+            {
+                "name": "removeAttachment",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/attachment/:id"
+            },
+            {
+                "name": "expandForHumans",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/attachment/:id/expand/human"
+            },
+            {
+                "name": "expandForMachines",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/attachment/:id/expand/raw"
+            },
+            {
+                "name": "getAttachmentMeta",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/attachment/meta"
+            }
+        ]
+    },
+    {
+        "name": "auditing",
+        "methods": [
+            {
+                "name": "getRecords",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/auditing/record?offset=(:offset)&limit=(:limit)&filter=(:filter)&from=(:from)&to=(:to)"
+            },
+            {
+                "name": "addRecord",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/auditing/record"
+            }
+        ]
+    },
+    {
+        "name": "avatar",
+        "methods": [
+            {
+                "name": "getAllSystemAvatars",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/avatar/:type/system"
+            }
+        ]
+    },
+    {
+        "name": "properties",
+        "methods": [
+            {
+                "name": "getPropertiesKeys",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/comment/:commentId/properties"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/comment/:commentId/properties/:propertyKey"
+            },
+            {
+                "name": "setProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/comment/:commentId/properties/:propertyKey"
+            },
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/comment/:commentId/properties/:propertyKey"
+            }
+        ]
+    },
+    {
+        "name": "component",
+        "methods": [
+            {
+                "name": "createComponent",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/component"
+            },
+            {
+                "name": "updateComponent",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/component/:id"
+            },
+            {
+                "name": "getComponent",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/component/:id"
+            },
+            {
+                "name": "delete",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/component/:id?moveIssuesTo=(:moveIssuesTo)"
+            },
+            {
+                "name": "getComponentRelatedIssues",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/component/:id/relatedIssueCounts"
+            }
+        ]
+    },
+    {
+        "name": "configuration",
+        "methods": [
+            {
+                "name": "getConfiguration",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/configuration"
+            }
+        ]
+    },
+    {
+        "name": "timetracking",
+        "methods": [
+            {
+                "name": "getSelectedTimeTrackingImplementation",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/configuration/timetracking"
+            },
+            {
+                "name": "selectTimeTrackingImplementation",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/configuration/timetracking"
+            },
+            {
+                "name": "disableTimeTracking",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/configuration/timetracking"
+            },
+            {
+                "name": "getAvailableTimeTrackingImplementations",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/configuration/timetracking/list"
+            },
+            {
+                "name": "getSharedTimeTrackingConfiguration",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/configuration/timetracking/options"
+            },
+            {
+                "name": "setSharedTimeTrackingConfiguration",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/configuration/timetracking/options"
+            }
+        ]
+    },
+    {
+        "name": "customFieldOption",
+        "methods": [
+            {
+                "name": "getCustomFieldOption",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/customFieldOption/:id"
+            }
+        ]
+    },
+    {
+        "name": "dashboard",
+        "methods": [
+            {
+                "name": "list",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/dashboard?filter=(:filter)&startAt=(:startAt)&maxResults=(:maxResults)"
+            },
+            {
+                "name": "getDashboard",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/dashboard/:id"
+            }
+        ]
+    },
+    {
+        "name": "properties",
+        "methods": [
+            {
+                "name": "getPropertiesKeys",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/dashboard/:dashboardId/items/:itemId/properties"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/dashboard/:dashboardId/items/:itemId/properties/:propertyKey"
+            },
+            {
+                "name": "setProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/dashboard/:dashboardId/items/:itemId/properties/:propertyKey"
+            },
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/dashboard/:dashboardId/items/:itemId/properties/:propertyKey"
+            }
+        ]
+    },
+    {
+        "name": "field",
+        "methods": [
+            {
+                "name": "createCustomField",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/field"
+            },
+            {
+                "name": "getFields",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/field"
+            }
+        ]
+    },
+    {
+        "name": "option",
+        "methods": [
+            {
+                "name": "createOption",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/field/:fieldKey/option"
+            },
+            {
+                "name": "getAllOptions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/field/:fieldKey/option?startAt=(:startAt)&maxResults=(:maxResults)"
+            },
+            {
+                "name": "putOption",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/field/:fieldKey/option/:optionId"
+            },
+            {
+                "name": "getOption",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/field/:fieldKey/option/:optionId"
+            },
+            {
+                "name": "delete",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/field/:fieldKey/option/:optionId"
+            },
+            {
+                "name": "replace",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/field/:fieldKey/option/:optionId/issue?replaceWith=(:replaceWith)&jql=(:jql)"
+            },
+            {
+                "name": "getSuggestionsEdit",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/field/:fieldKey/option/suggestions/edit?startAt=(:startAt)&maxResults=(:maxResults)&projectId=(:projectId)"
+            },
+            {
+                "name": "getSuggestionsSearch",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/field/:fieldKey/option/suggestions/search?startAt=(:startAt)&maxResults=(:maxResults)&projectId=(:projectId)"
+            }
+        ]
+    },
+    {
+        "name": "filter",
+        "methods": [
+            {
+                "name": "createFilter",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/filter?expand=(:expand)"
+            },
+            {
+                "name": "editFilter",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/filter/:id?expand=(:expand)"
+            },
+            {
+                "name": "deleteFilter",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/filter/:id"
+            },
+            {
+                "name": "getFilter",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/filter/:id?expand=(:expand)"
+            },
+            {
+                "name": "defaultColumns",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/filter/:id/columns"
+            },
+            {
+                "name": "setColumns",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/filter/:id/columns"
+            },
+            {
+                "name": "resetColumns",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/filter/:id/columns"
+            },
+            {
+                "name": "getSharePermissions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/filter/:id/permission"
+            },
+            {
+                "name": "addSharePermission",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/filter/:id/permission"
+            },
+            {
+                "name": "getSharePermission",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/filter/:id/permission/:permissionId"
+            },
+            {
+                "name": "deleteSharePermission",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/filter/:id/permission/{permission-id}"
+            },
+            {
+                "name": "getDefaultShareScope",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/filter/defaultShareScope"
+            },
+            {
+                "name": "setDefaultShareScope",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/filter/defaultShareScope"
+            },
+            {
+                "name": "getFavouriteFilters",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/filter/favourite?expand=(:expand)"
+            },
+            {
+                "name": "getMyFilters",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/filter/my?expand=(:expand)&includeFavourites=(:includeFavourites)"
+            }
+        ]
+    },
+    {
+        "name": "group",
+        "methods": [
+            {
+                "name": "createGroup",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/group"
+            },
+            {
+                "name": "getGroup",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/group?groupname=(:groupname)&expand=(:expand)"
+            },
+            {
+                "name": "removeGroup",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/group?groupname=(:groupname)&swapGroup=(:swapGroup)"
+            },
+            {
+                "name": "getUsersFromGroup",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/group/member?groupname=(:groupname)&includeInactiveUsers=(:includeInactiveUsers)&startAt=(:startAt)&maxResults=(:maxResults)"
+            },
+            {
+                "name": "addUserToGroup",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/group/user?groupname=(:groupname)"
+            },
+            {
+                "name": "removeUserFromGroup",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/group/user?groupname=(:groupname)&username=(:username)"
+            }
+        ]
+    },
+    {
+        "name": "groups",
+        "methods": [
+            {
+                "name": "findGroups",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/groups/picker?query=(:query)&exclude=(:exclude)&maxResults=(:maxResults)&userName=(:userName)"
+            }
+        ]
+    },
+    {
+        "name": "groupuserpicker",
+        "methods": [
+            {
+                "name": "findUsersAndGroups",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/groupuserpicker?query=(:query)&maxResults=(:maxResults)&showAvatar=(:showAvatar)&fieldId=(:fieldId)&projectId=(:projectId)&issueTypeId=(:issueTypeId)"
+            }
+        ]
+    },
+    {
+        "name": "issue",
+        "methods": [
+            {
+                "name": "createIssue",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue"
+            },
+            {
+                "name": "createIssues",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/bulk"
+            },
+            {
+                "name": "getIssue",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey?fields=(:fields)&expand=(:expand)&properties=(:properties)&fieldsByKeys=(:fieldsByKeys)&updateHistory=(:updateHistory)"
+            },
+            {
+                "name": "deleteIssue",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey?deleteSubtasks=(:deleteSubtasks)"
+            },
+            {
+                "name": "editIssue",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issue/:issueIdOrKey?notifyUsers=(:notifyUsers)&overrideScreenSecurity=(:overrideScreenSecurity)&overrideEditableFlag=(:overrideEditableFlag)"
+            },
+            {
+                "name": "assign",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issue/:issueIdOrKey/assignee"
+            },
+            {
+                "name": "getComments",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/comment?startAt=(:startAt)&maxResults=(:maxResults)&orderBy=(:orderBy)&expand=(:expand)"
+            },
+            {
+                "name": "addComment",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/comment?expand=(:expand)"
+            },
+            {
+                "name": "updateComment",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issue/:issueIdOrKey/comment/:id?expand=(:expand)"
+            },
+            {
+                "name": "deleteComment",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/comment/:id"
+            },
+            {
+                "name": "getComment",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/comment/:id?expand=(:expand)"
+            },
+            {
+                "name": "getEditIssueMeta",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/editmeta?overrideScreenSecurity=(:overrideScreenSecurity)&overrideEditableFlag=(:overrideEditableFlag)"
+            },
+            {
+                "name": "notify",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/notify"
+            },
+            {
+                "name": "getRemoteIssueLinks",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/remotelink?globalId=(:globalId)"
+            },
+            {
+                "name": "createOrUpdateRemoteIssueLink",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/remotelink"
+            },
+            {
+                "name": "deleteRemoteIssueLinkByGlobalId",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/remotelink?globalId=(:globalId)"
+            },
+            {
+                "name": "getRemoteIssueLinkById",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/remotelink/:linkId"
+            },
+            {
+                "name": "updateRemoteIssueLink",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issue/:issueIdOrKey/remotelink/:linkId"
+            },
+            {
+                "name": "deleteRemoteIssueLinkById",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/remotelink/:linkId"
+            },
+            {
+                "name": "getTransitions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/transitions?transitionId=(:transitionId)&skipRemoteOnlyCondition=(:skipRemoteOnlyCondition)"
+            },
+            {
+                "name": "doTransition",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/transitions"
+            },
+            {
+                "name": "removeVote",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/votes"
+            },
+            {
+                "name": "addVote",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/votes"
+            },
+            {
+                "name": "getVotes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/votes"
+            },
+            {
+                "name": "getIssueWatchers",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/watchers"
+            },
+            {
+                "name": "addWatcher",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/watchers"
+            },
+            {
+                "name": "removeWatcher",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/watchers?username=(:username)"
+            },
+            {
+                "name": "getIssueWorklog",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog?expand=(:expand)"
+            },
+            {
+                "name": "addWorklog",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog?adjustEstimate=(:adjustEstimate)&newEstimate=(:newEstimate)&reduceBy=(:reduceBy)&expand=(:expand)"
+            },
+            {
+                "name": "getWorklog",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog/:id?expand=(:expand)"
+            },
+            {
+                "name": "updateWorklog",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog/:id?adjustEstimate=(:adjustEstimate)&newEstimate=(:newEstimate)&expand=(:expand)"
+            },
+            {
+                "name": "deleteWorklog",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog/:id?adjustEstimate=(:adjustEstimate)&newEstimate=(:newEstimate)&increaseBy=(:increaseBy)"
+            },
+            {
+                "name": "getCreateIssueMeta",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/createmeta?projectIds=(:projectIds)&projectKeys=(:projectKeys)&issuetypeIds=(:issuetypeIds)&issuetypeNames=(:issuetypeNames)"
+            },
+            {
+                "name": "getIssuePickerResource",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/picker?query=(:query)&currentJQL=(:currentJQL)&currentIssueKey=(:currentIssueKey)&currentProjectId=(:currentProjectId)&showSubTasks=(:showSubTasks)&showSubTaskParent=(:showSubTaskParent)"
+            }
+        ]
+    },
+    {
+        "name": "attachments",
+        "methods": [
+            {
+                "name": "addAttachment",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issue/:issueIdOrKey/attachments"
+            }
+        ]
+    },
+    {
+        "name": "properties",
+        "methods": [
+            {
+                "name": "getPropertiesKeys",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/properties"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/properties/:propertyKey"
+            },
+            {
+                "name": "setProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issue/:issueIdOrKey/properties/:propertyKey"
+            },
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/properties/:propertyKey"
+            }
+        ]
+    },
+    {
+        "name": "properties",
+        "methods": [
+            {
+                "name": "getPropertiesKeys",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog/:worklogId/properties"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog/:worklogId/properties/:propertyKey"
+            },
+            {
+                "name": "setProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog/:worklogId/properties/:propertyKey"
+            },
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issue/:issueIdOrKey/worklog/:worklogId/properties/:propertyKey"
+            }
+        ]
+    },
+    {
+        "name": "issueLink",
+        "methods": [
+            {
+                "name": "linkIssues",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issueLink"
+            },
+            {
+                "name": "getIssueLink",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issueLink/:linkId"
+            },
+            {
+                "name": "deleteIssueLink",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issueLink/:linkId"
+            }
+        ]
+    },
+    {
+        "name": "issueLinkType",
+        "methods": [
+            {
+                "name": "getIssueLinkTypes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issueLinkType"
+            },
+            {
+                "name": "createIssueLinkType",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issueLinkType"
+            },
+            {
+                "name": "getIssueLinkType",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issueLinkType/:issueLinkTypeId"
+            },
+            {
+                "name": "deleteIssueLinkType",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issueLinkType/:issueLinkTypeId"
+            },
+            {
+                "name": "updateIssueLinkType",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issueLinkType/:issueLinkTypeId"
+            }
+        ]
+    },
+    {
+        "name": "issuesecurityschemes",
+        "methods": [
+            {
+                "name": "getIssueSecuritySchemes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issuesecurityschemes"
+            },
+            {
+                "name": "getIssueSecurityScheme",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issuesecurityschemes/:id"
+            }
+        ]
+    },
+    {
+        "name": "issuetype",
+        "methods": [
+            {
+                "name": "getIssueAllTypes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issuetype"
+            },
+            {
+                "name": "createIssueType",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issuetype"
+            },
+            {
+                "name": "getIssueType",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issuetype/:id"
+            },
+            {
+                "name": "deleteIssueType",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issuetype/:id?alternativeIssueTypeId=(:alternativeIssueTypeId)"
+            },
+            {
+                "name": "updateIssueType",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issuetype/:id"
+            },
+            {
+                "name": "getAlternativeIssueTypes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issuetype/:id/alternatives"
+            },
+            {
+                "name": "createAvatar",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/issuetype/:id/avatar2?x=(:x)&y=(:y)&size=(:size)"
+            }
+        ]
+    },
+    {
+        "name": "properties",
+        "methods": [
+            {
+                "name": "getPropertyKeys",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issuetype/:issueTypeId/properties"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/issuetype/:issueTypeId/properties/:propertyKey"
+            },
+            {
+                "name": "setProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/issuetype/:issueTypeId/properties/:propertyKey"
+            },
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/issuetype/:issueTypeId/properties/:propertyKey"
+            }
+        ]
+    },
+    {
+        "name": "autocompletedata",
+        "methods": [
+            {
+                "name": "getAutoComplete",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/jql/autocompletedata"
+            },
+            {
+                "name": "getFieldAutoCompleteForQueryString",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/jql/autocompletedata/suggestions?fieldName=(:fieldName)&fieldValue=(:fieldValue)&predicateName=(:predicateName)&predicateValue=(:predicateValue)"
+            }
+        ]
+    },
+    {
+        "name": "licenseValidator",
+        "methods": [
+            {
+                "name": "validate",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/licenseValidator"
+            }
+        ]
+    },
+    {
+        "name": "mypreferences",
+        "methods": [
+            {
+                "name": "setPreference",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/mypreferences?key=(:key)"
+            },
+            {
+                "name": "removePreference",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/mypreferences?key=(:key)"
+            },
+            {
+                "name": "getPreference",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/mypreferences?key=(:key)"
+            }
+        ]
+    },
+    {
+        "name": "myself",
+        "methods": [
+            {
+                "name": "getUser",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/myself"
+            }
+        ]
+    },
+    {
+        "name": "notificationscheme",
+        "methods": [
+            {
+                "name": "getNotificationSchemes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/notificationscheme?startAt=(:startAt)&maxResults=(:maxResults)&expand=(:expand)"
+            },
+            {
+                "name": "getNotificationScheme",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/notificationscheme/:id?expand=(:expand)"
+            }
+        ]
+    },
+    {
+        "name": "permissionscheme",
+        "methods": [
+            {
+                "name": "getPermissionSchemes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/permissionscheme?expand=(:expand)"
+            },
+            {
+                "name": "createPermissionScheme",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/permissionscheme?expand=(:expand)"
+            },
+            {
+                "name": "getPermissionScheme",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/permissionscheme/:schemeId?expand=(:expand)"
+            },
+            {
+                "name": "deletePermissionScheme",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/permissionscheme/:schemeId"
+            },
+            {
+                "name": "updatePermissionScheme",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/permissionscheme/:schemeId?expand=(:expand)"
+            },
+            {
+                "name": "getPermissionSchemeGrants",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/permissionscheme/:schemeId/permission?expand=(:expand)"
+            },
+            {
+                "name": "createPermissionGrant",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/permissionscheme/:schemeId/permission?expand=(:expand)"
+            },
+            {
+                "name": "getPermissionSchemeGrant",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/permissionscheme/:schemeId/permission/:permissionId?expand=(:expand)"
+            },
+            {
+                "name": "deletePermissionSchemeEntity",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/permissionscheme/:schemeId/permission/:permissionId"
+            }
+        ]
+    },
+    {
+        "name": "priority",
+        "methods": [
+            {
+                "name": "getPriorities",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/priority"
+            },
+            {
+                "name": "getPriority",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/priority/:id"
+            }
+        ]
+    },
+    {
+        "name": "project",
+        "methods": [
+            {
+                "name": "getAllProjects",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project?expand=(:expand)&recent=(:recent)"
+            },
+            {
+                "name": "createProject",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/project"
+            },
+            {
+                "name": "updateProject",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/project/:projectIdOrKey?expand=(:expand)"
+            },
+            {
+                "name": "deleteProject",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/project/:projectIdOrKey"
+            },
+            {
+                "name": "getProject",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey?expand=(:expand)"
+            },
+            {
+                "name": "updateProjectAvatar",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/project/:projectIdOrKey/avatar"
+            },
+            {
+                "name": "deleteAvatar",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/project/:projectIdOrKey/avatar/:id"
+            },
+            {
+                "name": "createAvatar",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/project/:projectIdOrKey/avatar2?x=(:x)&y=(:y)&size=(:size)"
+            },
+            {
+                "name": "getAllAvatars",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/avatars"
+            },
+            {
+                "name": "getProjectComponents",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/components"
+            },
+            {
+                "name": "getAllStatuses",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/statuses"
+            },
+            {
+                "name": "updateProjectType",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/project/:projectIdOrKey/type/:newProjectTypeKey"
+            },
+            {
+                "name": "getProjectVersionsPaginated",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/version?startAt=(:startAt)&maxResults=(:maxResults)&orderBy=(:orderBy)&expand=(:expand)"
+            },
+            {
+                "name": "getProjectVersions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/versions?expand=(:expand)"
+            }
+        ]
+    },
+    {
+        "name": "properties",
+        "methods": [
+            {
+                "name": "getPropertiesKeys",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/properties"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/project/:projectIdOrKey/properties/:propertyKey"
+            },
+            {
+                "name": "setProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/project/:projectIdOrKey/properties/:propertyKey"
+            },
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/properties/:propertyKey"
+            }
+        ]
+    },
+    {
+        "name": "role",
+        "methods": [
+            {
+                "name": "getProjectRoles",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/role"
+            },
+            {
+                "name": "getProjectRole",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/role/:id"
+            },
+            {
+                "name": "setActors",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/project/:projectIdOrKey/role/:id"
+            },
+            {
+                "name": "addActorUsers",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/project/:projectIdOrKey/role/:id"
+            },
+            {
+                "name": "deleteActor",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/project/:projectIdOrKey/role/:id?user=(:user)&group=(:group)"
+            }
+        ]
+    },
+    {
+        "name": "issuesecuritylevelscheme",
+        "methods": [
+            {
+                "name": "getIssueSecurityScheme",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectKeyOrId/issuesecuritylevelscheme"
+            }
+        ]
+    },
+    {
+        "name": "notificationscheme",
+        "methods": [
+            {
+                "name": "getNotificationScheme",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectKeyOrId/notificationscheme?expand=(:expand)"
+            }
+        ]
+    },
+    {
+        "name": "permissionscheme",
+        "methods": [
+            {
+                "name": "assignPermissionScheme",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/project/:projectKeyOrId/permissionscheme?expand=(:expand)"
+            },
+            {
+                "name": "getAssignedPermissionScheme",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectKeyOrId/permissionscheme?expand=(:expand)"
+            }
+        ]
+    },
+    {
+        "name": "securitylevel",
+        "methods": [
+            {
+                "name": "getSecurityLevelsForProject",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectKeyOrId/securitylevel"
+            }
+        ]
+    },
+    {
+        "name": "type",
+        "methods": [
+            {
+                "name": "getAllProjectTypes",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/type"
+            },
+            {
+                "name": "getProjectTypeByKey",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/type/:projectTypeKey"
+            },
+            {
+                "name": "getAccessibleProjectTypeByKey",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/type/:projectTypeKey/accessible"
+            }
+        ]
+    },
+    {
+        "name": "projectCategory",
+        "methods": [
+            {
+                "name": "getAllProjectCategories",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/projectCategory"
+            },
+            {
+                "name": "createProjectCategory",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/projectCategory"
+            },
+            {
+                "name": "removeProjectCategory",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/projectCategory/:id"
+            },
+            {
+                "name": "updateProjectCategory",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/projectCategory/:id"
+            },
+            {
+                "name": "getProjectCategoryById",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/projectCategory/:id"
+            }
+        ]
+    },
+    {
+        "name": "projectvalidate",
+        "methods": [
+            {
+                "name": "getProject",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/projectvalidate/key?key=(:key)"
+            }
+        ]
+    },
+    {
+        "name": "reindex",
+        "methods": [
+            {
+                "name": "reindex",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/reindex?type=(:type)&indexComments=(:indexComments)&indexChangeHistory=(:indexChangeHistory)&indexWorklogs=(:indexWorklogs)"
+            },
+            {
+                "name": "getReindexInfo",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/reindex?taskId=(:taskId)"
+            },
+            {
+                "name": "reindexIssues",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/reindex/issue?issueId=(:issueId)&indexComments=(:indexComments)&indexChangeHistory=(:indexChangeHistory)&indexWorklogs=(:indexWorklogs)"
+            },
+            {
+                "name": "getReindexProgress",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/reindex/progress?taskId=(:taskId)"
+            }
+        ]
+    },
+    {
+        "name": "request",
+        "methods": [
+            {
+                "name": "processRequests",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/reindex/request"
+            },
+            {
+                "name": "getProgress",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/reindex/request/:requestId"
+            },
+            {
+                "name": "getProgressBulk",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/reindex/request/bulk?requestId=(:requestId)"
+            }
+        ]
+    },
+    {
+        "name": "resolution",
+        "methods": [
+            {
+                "name": "getResolutions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/resolution"
+            },
+            {
+                "name": "getResolution",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/resolution/:id"
+            }
+        ]
+    },
+    {
+        "name": "role",
+        "methods": [
+            {
+                "name": "getProjectRoles",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/role"
+            },
+            {
+                "name": "createProjectRole",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/role"
+            },
+            {
+                "name": "getProjectRolesById",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/role/:id"
+            },
+            {
+                "name": "partialUpdateProjectRole",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/role/:id"
+            },
+            {
+                "name": "fullyUpdateProjectRole",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/role/:id"
+            },
+            {
+                "name": "deleteProjectRole",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/role/:id?swap=(:swap)"
+            },
+            {
+                "name": "getProjectRoleActorsForRole",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/role/:id/actors"
+            },
+            {
+                "name": "addProjectRoleActorsToRole",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/role/:id/actors"
+            },
+            {
+                "name": "deleteProjectRoleActorsFromRole",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/role/:id/actors?user=(:user)&group=(:group)"
+            }
+        ]
+    },
+    {
+        "name": "screens",
+        "methods": [
+            {
+                "name": "getFieldsToAdd",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/screens/:screenId/availableFields"
+            },
+            {
+                "name": "getAllTabs",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/screens/:screenId/tabs?projectKey=(:projectKey)"
+            },
+            {
+                "name": "addTab",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/screens/:screenId/tabs"
+            },
+            {
+                "name": "renameTab",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId"
+            },
+            {
+                "name": "deleteTab",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId"
+            },
+            {
+                "name": "addField",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId/fields"
+            },
+            {
+                "name": "getAllFields",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId/fields?projectKey=(:projectKey)"
+            },
+            {
+                "name": "removeField",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId/fields/:id"
+            },
+            {
+                "name": "moveField",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId/fields/:id/move"
+            },
+            {
+                "name": "moveTab",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId/move/:pos"
+            },
+            {
+                "name": "addFieldToDefaultScreen",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/screens/addToDefault/:fieldId"
+            }
+        ]
+    },
+    {
+        "name": "search",
+        "methods": [
+            {
+                "name": "searchUsingSearchRequest",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/search"
+            },
+            {
+                "name": "search",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/search?jql=(:jql)&startAt=(:startAt)&maxResults=(:maxResults)&validateQuery=(:validateQuery)&fields=(:fields)&expand=(:expand)&properties=(:properties)&fieldsByKeys=(:fieldsByKeys)"
+            }
+        ]
+    },
+    {
+        "name": "securitylevel",
+        "methods": [
+            {
+                "name": "getIssuesecuritylevel",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/securitylevel/:id"
+            }
+        ]
+    },
+    {
+        "name": "serverInfo",
+        "methods": [
+            {
+                "name": "getServerInfo",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/serverInfo?doHealthCheck=(:doHealthCheck)"
+            }
+        ]
+    },
+    {
+        "name": "settings",
+        "methods": [
+            {
+                "name": "setBaseURL",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/settings/baseUrl"
+            },
+            {
+                "name": "getIssueNavigatorDefaultColumns",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/settings/columns"
+            },
+            {
+                "name": "setIssueNavigatorDefaultColumns",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/settings/columns"
+            }
+        ]
+    },
+    {
+        "name": "status",
+        "methods": [
+            {
+                "name": "getStatuses",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/status"
+            },
+            {
+                "name": "getStatus",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/status/:idOrName"
+            }
+        ]
+    },
+    {
+        "name": "statuscategory",
+        "methods": [
+            {
+                "name": "getStatusCategories",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/statuscategory"
+            },
+            {
+                "name": "getStatusCategory",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/statuscategory/:idOrKey"
+            }
+        ]
+    },
+    {
+        "name": "task",
+        "methods": [
+            {
+                "name": "getTask",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/task/:taskId"
+            },
+            {
+                "name": "requestCancel",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/task/:taskId/cancel"
+            }
+        ]
+    },
+    {
+        "name": "universal_avatar",
+        "methods": [
+            {
+                "name": "storeAvatar",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/universal_avatar/type/:type/owner/:entityId?x=(:x)&y=(:y)&size=(:size)"
+            },
+            {
+                "name": "getAvatars",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/universal_avatar/type/:type/owner/:owningObjectId"
+            },
+            {
+                "name": "deleteAvatar",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/universal_avatar/type/:type/owner/:owningObjectId/avatar/:id"
+            }
+        ]
+    },
+    {
+        "name": "user",
+        "methods": [
+            {
+                "name": "createUser",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/user"
+            },
+            {
+                "name": "updateUser",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/user?username=(:username)&key=(:key)"
+            },
+            {
+                "name": "removeUser",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/user?username=(:username)&key=(:key)"
+            },
+            {
+                "name": "getUser",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user?username=(:username)&key=(:key)"
+            },
+            {
+                "name": "findBulkAssignableUsers",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/assignable/multiProjectSearch?username=(:username)&projectKeys=(:projectKeys)&startAt=(:startAt)&maxResults=(:maxResults)"
+            },
+            {
+                "name": "findAssignableUsers",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/assignable/search?username=(:username)&project=(:project)&issueKey=(:issueKey)&startAt=(:startAt)&maxResults=(:maxResults)&actionDescriptorId=(:actionDescriptorId)"
+            },
+            {
+                "name": "updateProjectAvatar",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/user/avatar?username=(:username)"
+            },
+            {
+                "name": "createAvatarFromTemporary",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/user/avatar?username=(:username)"
+            },
+            {
+                "name": "deleteAvatar",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/user/avatar/:id?username=(:username)"
+            },
+            {
+                "name": "storeTemporaryAvatar",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/user/avatar/temporary?username=(:username)&filename=(:filename)&size=(:size)"
+            },
+            {
+                "name": "storeTemporaryAvatarUsingMultiPart",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/user/avatar/temporary?username=(:username)"
+            },
+            {
+                "name": "getAllAvatars",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/avatars?username=(:username)"
+            },
+            {
+                "name": "defaultColumns",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/columns?username=(:username)"
+            },
+            {
+                "name": "setColumns",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/user/columns"
+            },
+            {
+                "name": "resetColumns",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/user/columns?username=(:username)"
+            },
+            {
+                "name": "changeUserPassword",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/user/password?username=(:username)&key=(:key)"
+            },
+            {
+                "name": "findUsersWithAllPermissions",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/permission/search?username=(:username)&permissions=(:permissions)&issueKey=(:issueKey)&projectKey=(:projectKey)&startAt=(:startAt)&maxResults=(:maxResults)"
+            },
+            {
+                "name": "findUsersForPicker",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/picker?query=(:query)&maxResults=(:maxResults)&showAvatar=(:showAvatar)&exclude=(:exclude)"
+            },
+            {
+                "name": "findUsers",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/search?username=(:username)&startAt=(:startAt)&maxResults=(:maxResults)&includeActive=(:includeActive)&includeInactive=(:includeInactive)&property=(:property)"
+            },
+            {
+                "name": "findUsersWithBrowsePermission",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/viewissue/search?username=(:username)&issueKey=(:issueKey)&projectKey=(:projectKey)&startAt=(:startAt)&maxResults=(:maxResults)"
+            }
+        ]
+    },
+    {
+        "name": "properties",
+        "methods": [
+            {
+                "name": "getPropertiesKeys",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/properties?userKey=(:userKey)&username=(:username)"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/user/properties/:propertyKey?userKey=(:userKey)&username=(:username)"
+            },
+            {
+                "name": "setProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/user/properties/:propertyKey?userKey=(:userKey)&username=(:username)"
+            },
+            {
+                "name": "getProperty",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/user/properties/:propertyKey?userKey=(:userKey)&username=(:username)"
+            }
+        ]
+    },
+    {
+        "name": "version",
+        "methods": [
+            {
+                "name": "createVersion",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/version"
+            },
+            {
+                "name": "moveVersion",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/version/:id/move"
+            },
+            {
+                "name": "getVersion",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/version/:id?expand=(:expand)"
+            },
+            {
+                "name": "updateVersion",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/version/:id"
+            },
+            {
+                "name": "delete",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/version/:id?moveFixIssuesTo=(:moveFixIssuesTo)&moveAffectedIssuesTo=(:moveAffectedIssuesTo)"
+            },
+            {
+                "name": "merge",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/version/:id/mergeto/:moveIssuesTo"
+            },
+            {
+                "name": "getVersionRelatedIssues",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/version/:id/relatedIssueCounts"
+            },
+            {
+                "name": "delete",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/version/:id/removeAndSwap"
+            },
+            {
+                "name": "getVersionUnresolvedIssues",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/version/:id/unresolvedIssueCount"
+            },
+            {
+                "name": "getRemoteVersionLinksByVersionId",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/version/:versionId/remotelink"
+            },
+            {
+                "name": "createOrUpdateRemoteVersionLink",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/version/:versionId/remotelink"
+            },
+            {
+                "name": "deleteRemoteVersionLinksByVersionId",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/version/:versionId/remotelink"
+            },
+            {
+                "name": "getRemoteVersionLink",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/version/:versionId/remotelink/:globalId"
+            },
+            {
+                "name": "createOrUpdateRemoteVersionLink",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/version/:versionId/remotelink/:globalId"
+            },
+            {
+                "name": "deleteRemoteVersionLink",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/version/:versionId/remotelink/:globalId"
+            },
+            {
+                "name": "getRemoteVersionLinks",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/version/remotelink?globalId=(:globalId)"
+            }
+        ]
+    },
+    {
+        "name": "workflow",
+        "methods": [
+            {
+                "name": "getAllWorkflows",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflow?workflowName=(:workflowName)"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflow/:id/properties?key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
+            },
+            {
+                "name": "createProperty",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/workflow/:id/properties?key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
+            },
+            {
+                "name": "updateProperty",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflow/:id/properties?key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
+            },
+            {
+                "name": "getProperties",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflow/:id/properties?includeReservedKeys=(:includeReservedKeys)&key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
+            }
+        ]
+    },
+    {
+        "name": "workflowscheme",
+        "methods": [
+            {
+                "name": "createScheme",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/workflowscheme"
+            },
+            {
+                "name": "getById",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id?returnDraftIfExists=(:returnDraftIfExists)"
+            },
+            {
+                "name": "deleteScheme",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id"
+            },
+            {
+                "name": "update",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id"
+            },
+            {
+                "name": "createDraftForParent",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/workflowscheme/:id/createdraft"
+            },
+            {
+                "name": "deleteDefault",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id/default?updateDraftIfNeeded=(:updateDraftIfNeeded)"
+            },
+            {
+                "name": "updateDefault",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id/default"
+            },
+            {
+                "name": "getDefault",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/default?returnDraftIfExists=(:returnDraftIfExists)"
+            },
+            {
+                "name": "getDraftById",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/draft"
+            },
+            {
+                "name": "deleteDraftById",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id/draft"
+            },
+            {
+                "name": "updateDraft",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id/draft"
+            },
+            {
+                "name": "getDraftDefault",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/draft/default"
+            },
+            {
+                "name": "deleteDraftDefault",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id/draft/default"
+            },
+            {
+                "name": "updateDraftDefault",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id/draft/default"
+            },
+            {
+                "name": "getDraftIssueType",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/draft/issuetype/:issueType"
+            },
+            {
+                "name": "deleteDraftIssueType",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id/draft/issuetype/:issueType"
+            },
+            {
+                "name": "setDraftIssueType",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id/draft/issuetype/:issueType"
+            },
+            {
+                "name": "getDraftWorkflow",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/draft/workflow?workflowName=(:workflowName)"
+            },
+            {
+                "name": "deleteDraftWorkflowMapping",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id/draft/workflow?workflowName=(:workflowName)"
+            },
+            {
+                "name": "updateDraftWorkflowMapping",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id/draft/workflow?workflowName=(:workflowName)"
+            },
+            {
+                "name": "getIssueType",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/issuetype/:issueType?returnDraftIfExists=(:returnDraftIfExists)"
+            },
+            {
+                "name": "deleteIssueType",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id/issuetype/:issueType?updateDraftIfNeeded=(:updateDraftIfNeeded)"
+            },
+            {
+                "name": "setIssueType",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id/issuetype/:issueType"
+            },
+            {
+                "name": "getWorkflow",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/workflow?workflowName=(:workflowName)&returnDraftIfExists=(:returnDraftIfExists)"
+            },
+            {
+                "name": "deleteWorkflowMapping",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/workflowscheme/:id/workflow?workflowName=(:workflowName)&updateDraftIfNeeded=(:updateDraftIfNeeded)"
+            },
+            {
+                "name": "updateWorkflowMapping",
+                "httpMethod": "PUT",
+                "path": "/rest/api/2/workflowscheme/:id/workflow?workflowName=(:workflowName)"
+            }
+        ]
+    },
+    {
+        "name": "worklog",
+        "methods": [
+            {
+                "name": "getIdsOfWorklogsDeletedSince",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/worklog/deleted?since=(:since)"
+            },
+            {
+                "name": "getWorklogsForIds",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/worklog/list?expand=(:expand)"
+            },
+            {
+                "name": "getIdsOfWorklogsModifiedSince",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/worklog/updated?since=(:since)&expand=(:expand)"
+            }
+        ]
+    },
+    {
+        "name": "session",
+        "methods": [
+            {
+                "name": "logout",
+                "httpMethod": "DELETE",
+                "path": "/rest/auth/1/session"
+            },
+            {
+                "name": "currentUser",
+                "httpMethod": "GET",
+                "path": "/rest/auth/1/session"
+            },
+            {
+                "name": "login",
+                "httpMethod": "POST",
+                "path": "/rest/auth/1/session"
+            }
+        ]
+    },
+    {
+        "name": "websudo",
+        "methods": [
+            {
+                "name": "release",
+                "httpMethod": "DELETE",
+                "path": "/rest/auth/1/websudo"
+            }
+        ]
+    }
+]
