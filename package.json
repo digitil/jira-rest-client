@@ -1,6 +1,6 @@
 {
   "name": "jira-rest-client",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/api.js",
   "scripts": {
     "update": "node lib/update.js"
