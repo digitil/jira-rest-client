@@ -5,12 +5,12 @@
             {
                 "name": "getPermissions",
                 "httpMethod": "GET",
-                "path": "/rest/api/2//mypermissions?projectKey=(:projectKey)&projectId=(:projectId)&issueKey=(:issueKey)&issueId=(:issueId)"
+                "path": "/rest/api/2/mypermissions?projectKey=(:projectKey)&projectId=(:projectId)&issueKey=(:issueKey)&issueId=(:issueId)"
             },
             {
                 "name": "getAllPermissions",
                 "httpMethod": "GET",
-                "path": "/rest/api/2//permissions"
+                "path": "/rest/api/2/permissions"
             }
         ]
     },
@@ -763,11 +763,6 @@
                 "path": "/rest/api/2/issuetype"
             },
             {
-                "name": "getIssueType",
-                "httpMethod": "GET",
-                "path": "/rest/api/2/issuetype/:id"
-            },
-            {
                 "name": "deleteIssueType",
                 "httpMethod": "DELETE",
                 "path": "/rest/api/2/issuetype/:id?alternativeIssueTypeId=(:alternativeIssueTypeId)"
@@ -775,6 +770,11 @@
             {
                 "name": "updateIssueType",
                 "httpMethod": "PUT",
+                "path": "/rest/api/2/issuetype/:id"
+            },
+            {
+                "name": "getIssueType",
+                "httpMethod": "GET",
                 "path": "/rest/api/2/issuetype/:id"
             },
             {
@@ -843,6 +843,11 @@
         "name": "mypreferences",
         "methods": [
             {
+                "name": "getPreference",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/mypreferences?key=(:key)"
+            },
+            {
                 "name": "setPreference",
                 "httpMethod": "PUT",
                 "path": "/rest/api/2/mypreferences?key=(:key)"
@@ -850,11 +855,6 @@
             {
                 "name": "removePreference",
                 "httpMethod": "DELETE",
-                "path": "/rest/api/2/mypreferences?key=(:key)"
-            },
-            {
-                "name": "getPreference",
-                "httpMethod": "GET",
                 "path": "/rest/api/2/mypreferences?key=(:key)"
             }
         ]
@@ -923,14 +923,14 @@
                 "path": "/rest/api/2/permissionscheme/:schemeId/permission?expand=(:expand)"
             },
             {
-                "name": "getPermissionSchemeGrant",
-                "httpMethod": "GET",
-                "path": "/rest/api/2/permissionscheme/:schemeId/permission/:permissionId?expand=(:expand)"
-            },
-            {
                 "name": "deletePermissionSchemeEntity",
                 "httpMethod": "DELETE",
                 "path": "/rest/api/2/permissionscheme/:schemeId/permission/:permissionId"
+            },
+            {
+                "name": "getPermissionSchemeGrant",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/permissionscheme/:schemeId/permission/:permissionId?expand=(:expand)"
             }
         ]
     },
@@ -1058,9 +1058,9 @@
                 "path": "/rest/api/2/project/:projectIdOrKey/role"
             },
             {
-                "name": "getProjectRole",
-                "httpMethod": "GET",
-                "path": "/rest/api/2/project/:projectIdOrKey/role/:id"
+                "name": "deleteActor",
+                "httpMethod": "DELETE",
+                "path": "/rest/api/2/project/:projectIdOrKey/role/:id?user=(:user)&group=(:group)"
             },
             {
                 "name": "setActors",
@@ -1073,9 +1073,9 @@
                 "path": "/rest/api/2/project/:projectIdOrKey/role/:id"
             },
             {
-                "name": "deleteActor",
-                "httpMethod": "DELETE",
-                "path": "/rest/api/2/project/:projectIdOrKey/role/:id?user=(:user)&group=(:group)"
+                "name": "getProjectRole",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/project/:projectIdOrKey/role/:id"
             }
         ]
     },
@@ -1158,6 +1158,11 @@
                 "path": "/rest/api/2/projectCategory"
             },
             {
+                "name": "getProjectCategoryById",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/projectCategory/:id"
+            },
+            {
                 "name": "removeProjectCategory",
                 "httpMethod": "DELETE",
                 "path": "/rest/api/2/projectCategory/:id"
@@ -1165,11 +1170,6 @@
             {
                 "name": "updateProjectCategory",
                 "httpMethod": "PUT",
-                "path": "/rest/api/2/projectCategory/:id"
-            },
-            {
-                "name": "getProjectCategoryById",
-                "httpMethod": "GET",
                 "path": "/rest/api/2/projectCategory/:id"
             }
         ]
@@ -1323,14 +1323,14 @@
                 "path": "/rest/api/2/screens/:screenId/tabs/:tabId"
             },
             {
-                "name": "addField",
-                "httpMethod": "POST",
-                "path": "/rest/api/2/screens/:screenId/tabs/:tabId/fields"
-            },
-            {
                 "name": "getAllFields",
                 "httpMethod": "GET",
                 "path": "/rest/api/2/screens/:screenId/tabs/:tabId/fields?projectKey=(:projectKey)"
+            },
+            {
+                "name": "addField",
+                "httpMethod": "POST",
+                "path": "/rest/api/2/screens/:screenId/tabs/:tabId/fields"
             },
             {
                 "name": "removeField",
@@ -1508,36 +1508,6 @@
                 "path": "/rest/api/2/user/assignable/search?username=(:username)&project=(:project)&issueKey=(:issueKey)&startAt=(:startAt)&maxResults=(:maxResults)&actionDescriptorId=(:actionDescriptorId)"
             },
             {
-                "name": "updateProjectAvatar",
-                "httpMethod": "PUT",
-                "path": "/rest/api/2/user/avatar?username=(:username)"
-            },
-            {
-                "name": "createAvatarFromTemporary",
-                "httpMethod": "POST",
-                "path": "/rest/api/2/user/avatar?username=(:username)"
-            },
-            {
-                "name": "deleteAvatar",
-                "httpMethod": "DELETE",
-                "path": "/rest/api/2/user/avatar/:id?username=(:username)"
-            },
-            {
-                "name": "storeTemporaryAvatar",
-                "httpMethod": "POST",
-                "path": "/rest/api/2/user/avatar/temporary?username=(:username)&filename=(:filename)&size=(:size)"
-            },
-            {
-                "name": "storeTemporaryAvatarUsingMultiPart",
-                "httpMethod": "POST",
-                "path": "/rest/api/2/user/avatar/temporary?username=(:username)"
-            },
-            {
-                "name": "getAllAvatars",
-                "httpMethod": "GET",
-                "path": "/rest/api/2/user/avatars?username=(:username)"
-            },
-            {
                 "name": "defaultColumns",
                 "httpMethod": "GET",
                 "path": "/rest/api/2/user/columns?username=(:username)"
@@ -1698,11 +1668,6 @@
                 "path": "/rest/api/2/workflow?workflowName=(:workflowName)"
             },
             {
-                "name": "deleteProperty",
-                "httpMethod": "DELETE",
-                "path": "/rest/api/2/workflow/:id/properties?key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
-            },
-            {
                 "name": "createProperty",
                 "httpMethod": "POST",
                 "path": "/rest/api/2/workflow/:id/properties?key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
@@ -1710,6 +1675,11 @@
             {
                 "name": "updateProperty",
                 "httpMethod": "PUT",
+                "path": "/rest/api/2/workflow/:id/properties?key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
+            },
+            {
+                "name": "deleteProperty",
+                "httpMethod": "DELETE",
                 "path": "/rest/api/2/workflow/:id/properties?key=(:key)&workflowName=(:workflowName)&workflowMode=(:workflowMode)"
             },
             {
@@ -1823,14 +1793,14 @@
                 "path": "/rest/api/2/workflowscheme/:id/draft/workflow?workflowName=(:workflowName)"
             },
             {
-                "name": "getIssueType",
-                "httpMethod": "GET",
-                "path": "/rest/api/2/workflowscheme/:id/issuetype/:issueType?returnDraftIfExists=(:returnDraftIfExists)"
-            },
-            {
                 "name": "deleteIssueType",
                 "httpMethod": "DELETE",
                 "path": "/rest/api/2/workflowscheme/:id/issuetype/:issueType?updateDraftIfNeeded=(:updateDraftIfNeeded)"
+            },
+            {
+                "name": "getIssueType",
+                "httpMethod": "GET",
+                "path": "/rest/api/2/workflowscheme/:id/issuetype/:issueType?returnDraftIfExists=(:returnDraftIfExists)"
             },
             {
                 "name": "setIssueType",
@@ -1878,29 +1848,19 @@
         "name": "session",
         "methods": [
             {
-                "name": "logout",
-                "httpMethod": "DELETE",
+                "name": "currentUser",
+                "httpMethod": "GET",
                 "path": "/rest/auth/1/session"
             },
             {
-                "name": "currentUser",
-                "httpMethod": "GET",
+                "name": "logout",
+                "httpMethod": "DELETE",
                 "path": "/rest/auth/1/session"
             },
             {
                 "name": "login",
                 "httpMethod": "POST",
                 "path": "/rest/auth/1/session"
-            }
-        ]
-    },
-    {
-        "name": "websudo",
-        "methods": [
-            {
-                "name": "release",
-                "httpMethod": "DELETE",
-                "path": "/rest/auth/1/websudo"
             }
         ]
     }

@@ -58,6 +58,7 @@ Methods _can_ accept the following positional parameters
     * String [body] - expected IFF the resource method is PUT/POST
     * Object requestOptions - always accepted.
 
+
 See [request documentation](https://github.com/request/request#requestoptions-callback) for available requestOptions.
 
 All methods return a promise.
