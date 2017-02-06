@@ -62,3 +62,8 @@ Methods _can_ accept the following positional parameters
 See [request documentation](https://github.com/request/request#requestoptions-callback) for available requestOptions.
 
 All methods return a promise.
+
+
+## License
+
+MIT: [License](./LICENSE)

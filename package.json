@@ -6,7 +6,7 @@
     "update": "node lib/update.js"
   },
   "author": "Calvin McEachron <calvin@digitil.me> (http://digitil.me/)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "lodash.merge": "4.6.0",
     "request": "2.79.0",
