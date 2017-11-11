@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- node
+deploy:
+  provider: npm
+  email: calvin@digitil.me
+  api_key:
+    secure: h3ZJjdE7Qf+ANyAtrY+k4IG2IzfAiUafIOQl9Fq9m17AQKjwEnIR+jI2OR2vbYnPNtYAH8jxYEOnrTzdhxlvTCeyWqzqMvtmhCiKW7WKOgk4JzOwnAkO5sHgDujKz3xKB6+XDEg8U+w/nv0O8aOVLo/JL9+xtpdsVegtAsI0cCOz5qKASAhUWiEX/xE4+KqHHfsfIiRmVrN9HPvUo04QuTiNvdSoqhYr71NvVxR+/Urz2JLDwaDMqrbq7L8rn94MwrLsh078y+LBV2VVd5TYIhZzzsuDnGCcvRtclTVCvGD1nOnprSTukKdT2g5DVzGNL2iN+QloijfhQ9bTL6rNvmA/pUJLFD/IyZrrdD2alxYR5kQKvluUHruYzpNmptplW4zVo83dIJr890u0OI35bk7n8U9IMEGNBs8JN4byXFwIOsHZyQo0H9Zu7nxnfp0f1+Exno3zM9mLBH/dH3P9U3tbH3hfFge0o1eqmwz3t/z7RbYLzC4h//SxxLu8VH95IC4pH1gf0stXcmGpUsAqi3h2ISDwv1MZHRlubmEqm2JrZDS6gkcudW6aRbhYC1/aE1v/6NmLVxKtmzxMHptpD8h+7gXcQbye6dJIaIThwyqIdfQJm8fz952mSbHKUMo2UjXUQ4UhgV/3Z0IgbE7Qu3ImnBKYIbvZuSI4tUnRoWI=
+  on:
+    tags: true
+    repo: digitil/jira-rest-client

@@ -1,9 +1,10 @@
 {
   "name": "jira-rest-client",
-  "version": "1.0.3",
+  "version": "1.0.4-0",
   "main": "lib/api.js",
   "scripts": {
-    "update": "node lib/update.js"
+    "update": "node lib/update.js",
+    "test": "node lib/api.test.js"
   },
   "author": "Calvin McEachron <calvin@digitil.me> (http://digitil.me/)",
   "license": "MIT",
@@ -22,8 +23,8 @@
   "description": "A Javascript client to the JIRA Cloud REST API",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/digitil/jira-rest-client.git"
+    "url": "https://github.com/digitil/jira-rest-client.git"
   },
   "keywords": [],
-  "homepage": "https://bitbucket.org/digitil/jira-rest-client#readme"
+  "homepage": "https://github.com/digitil/jira-rest-client"
 }
