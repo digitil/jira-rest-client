@@ -23,8 +23,8 @@
   "description": "A Javascript client to the JIRA Cloud REST API",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/digitil/jira-rest-client.git"
+    "url": "https://github.com/digitil/jira-rest-client.git"
   },
   "keywords": [],
-  "homepage": "https://bitbucket.org/digitil/jira-rest-client#readme"
+  "homepage": "https://github.com/digitil/jira-rest-client"
 }
