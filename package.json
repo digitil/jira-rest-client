@@ -3,7 +3,8 @@
   "version": "1.0.4-0",
   "main": "lib/api.js",
   "scripts": {
-    "update": "node lib/update.js"
+    "update": "node lib/update.js",
+    "test": "node lib/api.test.js"
   },
   "author": "Calvin McEachron <calvin@digitil.me> (http://digitil.me/)",
   "license": "MIT",
