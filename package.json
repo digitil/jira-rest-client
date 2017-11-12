@@ -10,8 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "lodash.merge": "4.6.0",
-    "request": "2.79.0",
-    "request-promise": "4.1.1",
+    "request": "2.83.0",
+    "request-promise": "4.2.2",
     "route-parser": "0.0.5"
   },
   "devDependencies": {

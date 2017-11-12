@@ -1,5 +1,7 @@
 # JIRA REST API Client
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/digitil/jira-rest-client.svg)](https://greenkeeper.io/)
+
 A Javascript client to the JIRA Cloud REST API
 
 [![NPM](https://nodei.co/npm/jira-rest-client.svg?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/jira-rest-client/)
