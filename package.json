@@ -18,7 +18,7 @@
     "cheerio": "0.22.0"
   },
   "engines": {
-    "node": "7.3.0"
+    "node": "10"
   },
   "description": "A Javascript client to the JIRA Cloud REST API",
   "repository": {
