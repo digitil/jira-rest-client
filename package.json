@@ -9,7 +9,7 @@
   "author": "Calvin McEachron <calvin@digitil.me> (http://digitil.me/)",
   "license": "MIT",
   "dependencies": {
-    "lodash.merge": "4.6.0",
+    "lodash.merge": "4.6.1",
     "request": "2.83.0",
     "request-promise": "4.2.3",
     "route-parser": "0.0.5"
