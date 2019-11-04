@@ -11,7 +11,7 @@
   "dependencies": {
     "lodash.merge": "4.6.1",
     "request": "2.84.0",
-    "request-promise": "4.2.3",
+    "request-promise": "4.2.5",
     "route-parser": "0.0.5"
   },
   "devDependencies": {
